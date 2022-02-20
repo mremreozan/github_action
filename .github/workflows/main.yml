@@ -1,4 +1,4 @@
-name: Python 3.8
+name: lint_test_format
 on: [push]
 jobs:
   build:
