@@ -22,7 +22,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/github_action_docker:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/github_action_docker:latest
 
       # - name: Build the latest Docker image
       #   run: docker build . --file ./Dockerfile --tag icareemreozan/github_action_docker:latest
