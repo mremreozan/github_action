@@ -1,5 +1,5 @@
 # https://docs.docker.com/ci-cd/github-actions/
-name: Login_docker
+name: update_docker_image
 
 on:
   push:
@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/github_action_docker:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ dockerhub.DOCKERHUB_REPOSITORY_NAME }}:latest
